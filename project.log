@@ -264,3 +264,107 @@
 2026-07-18 02:28:52 | INFO | BI | ========================
 2026-07-18 02:28:52 | INFO | BI | Executed successfully!
 2026-07-18 02:28:52 | INFO | BI | ========================
+2026-07-18 02:42:56 | INFO | BI | === RUN START ===
+2026-07-18 02:42:56 | INFO | BI | project=BI
+2026-07-18 02:42:56 | INFO | BI | repo_dir=bintel-03-cleaning
+2026-07-18 02:42:56 | INFO | BI | python=3.14.2
+2026-07-18 02:42:56 | INFO | BI | os=Windows 11
+2026-07-18 02:42:56 | INFO | BI | shell=powershell
+2026-07-18 02:42:56 | INFO | BI | cwd=.
+2026-07-18 02:42:56 | INFO | BI | github_actions=False
+2026-07-18 02:42:56 | INFO | BI | ========================
+2026-07-18 02:42:56 | INFO | BI | START main()
+2026-07-18 02:42:56 | INFO | BI | ========================
+2026-07-18 02:42:56 | INFO | BI | Raw data:  = data\raw
+2026-07-18 02:42:56 | INFO | BI | Downtime: = data\raw\downtime_abdel.csv
+2026-07-18 02:42:56 | INFO | BI | CALL a function to load the downtime dataset.............
+2026-07-18 02:42:56 | INFO | BI | Loading downtime from data\raw\downtime_abdel.csv
+2026-07-18 02:42:56 | INFO | BI | Loaded: 505 rows, 6 columns
+2026-07-18 02:42:56 | INFO | BI | CALL a function to get downtime by production line........
+2026-07-18 02:42:56 | INFO | BI | Aggregating downtime by production line
+2026-07-18 02:42:56 | WARNING | BI |   Excluding 2 of 505 downtime rows (0.4%) with missing or negative DowntimeMinutes
+2026-07-18 02:42:56 | INFO | BI |   Highest downtime line: Line-1 (12,222.7 minutes)
+2026-07-18 02:42:56 | INFO | BI | CALL a function to plot downtime by production line........
+2026-07-18 02:42:56 | INFO | BI | Creating chart: Total Downtime by Production Line
+2026-07-18 02:42:56 | INFO | BI | CALL a function to get downtime by cause........
+2026-07-18 02:42:56 | INFO | BI | Aggregating downtime by cause
+2026-07-18 02:42:56 | WARNING | BI |   Excluding 1 rows with missing DowntimeCause
+2026-07-18 02:42:56 | INFO | BI |   Top downtime cause: Mechanical Failure (11,298.7 minutes)
+2026-07-18 02:42:56 | INFO | BI | CALL a function to plot downtime by cause........
+2026-07-18 02:42:56 | INFO | BI | Creating chart: Total Downtime by Cause
+2026-07-18 02:42:56 | INFO | BI | CALL a function to summarize the dataset........
+2026-07-18 02:42:56 | INFO | BI | ========================
+2026-07-18 02:42:56 | INFO | BI | SUMMARY
+2026-07-18 02:42:56 | INFO | BI | ========================
+2026-07-18 02:42:56 | INFO | BI | Downtime records: 505 rows, 6 columns
+2026-07-18 02:42:56 | INFO | BI | ========================
+2026-07-18 02:42:56 | INFO | BI | ANALYST NOTES:
+2026-07-18 02:42:56 | INFO | BI | Note any data quality issues (missing/negative durations,
+2026-07-18 02:42:56 | INFO | BI | inconsistent casing in Shift or DowntimeCause).
+2026-07-18 02:42:56 | INFO | BI | Cleaning is planned in a future project phase.
+2026-07-18 02:42:56 | INFO | BI | ========================
+2026-07-18 02:42:56 | INFO | BI | CALL a function to show charts........
+2026-07-18 02:44:48 | INFO | BI | Workflow complete
+2026-07-18 02:44:48 | INFO | BI | CLOSE chart windows to continue.
+2026-07-18 02:44:48 | INFO | BI | Terminate this process with CTRL+c as needed.
+2026-07-18 02:44:48 | INFO | BI | ========================
+2026-07-18 02:44:48 | INFO | BI | Executed successfully!
+2026-07-18 02:44:48 | INFO | BI | ========================
+2026-07-18 03:04:04 | INFO | BI | === RUN START ===
+2026-07-18 03:04:04 | INFO | BI | project=BI
+2026-07-18 03:04:04 | INFO | BI | repo_dir=bintel-03-cleaning
+2026-07-18 03:04:04 | INFO | BI | python=3.14.2
+2026-07-18 03:04:04 | INFO | BI | os=Windows 11
+2026-07-18 03:04:04 | INFO | BI | shell=powershell
+2026-07-18 03:04:04 | INFO | BI | cwd=.
+2026-07-18 03:04:04 | INFO | BI | github_actions=False
+2026-07-18 03:04:04 | INFO | BI | ========================
+2026-07-18 03:04:04 | INFO | BI | START main()
+2026-07-18 03:04:04 | INFO | BI | ========================
+2026-07-18 03:04:04 | INFO | BI | Raw data:  = data\raw
+2026-07-18 03:04:04 | INFO | BI | Customers: = data\raw\customers_data.csv
+2026-07-18 03:04:04 | INFO | BI | Products:  = data\raw\products_data.csv
+2026-07-18 03:04:04 | INFO | BI | Sales:     = data\raw\sales_data.csv
+2026-07-18 03:04:04 | INFO | BI | CALL a function to load each dataset.............
+2026-07-18 03:04:04 | INFO | BI | Loading customers from data\raw\customers_data.csv
+2026-07-18 03:04:04 | INFO | BI | Loaded: 201 rows, 6 columns
+2026-07-18 03:04:04 | INFO | BI | Loading products from data\raw\products_data.csv
+2026-07-18 03:04:04 | INFO | BI | Loaded: 100 rows, 6 columns
+2026-07-18 03:04:04 | INFO | BI | Loading sales from data\raw\sales_data.csv
+2026-07-18 03:04:04 | INFO | BI | Loaded: 2400 rows, 9 columns
+2026-07-18 03:04:04 | INFO | BI | CALL a function to get sales by region........
+2026-07-18 03:04:04 | INFO | BI | Aggregating sales by region
+2026-07-18 03:04:04 | INFO | BI |   Top region: East ($1,234,686.51)
+2026-07-18 03:04:04 | INFO | BI | Returning DataFrame with total sales by region
+2026-07-18 03:04:04 | INFO | BI | CALL a function to plot sales by region........
+2026-07-18 03:04:04 | INFO | BI | Creating chart: Total Sales by Region
+2026-07-18 03:04:04 | INFO | BI | CALL a function to get sales by product category........
+2026-07-18 03:04:04 | INFO | BI | Aggregating sales by product category
+2026-07-18 03:04:04 | INFO | BI |   Top category: Office ($1,420,376.39)
+2026-07-18 03:04:04 | INFO | BI | CALL a function to plot sales by product category........
+2026-07-18 03:04:04 | INFO | BI | Creating chart: Total Sales by Product Category
+2026-07-18 03:04:04 | INFO | BI | CALL a function to get sales by payment type........
+2026-07-18 03:04:04 | INFO | BI | Aggregating sales by payment type
+2026-07-18 03:04:04 | WARNING | BI |   Excluding 1 of 2400 sales rows (0.0%) with missing PaymentType
+2026-07-18 03:04:04 | INFO | BI |   Top payment type: CreditCard ($805,558.57)
+2026-07-18 03:04:04 | INFO | BI | CALL a function to plot sales by payment type........
+2026-07-18 03:04:04 | INFO | BI | Creating chart: Total Sales by Payment Type
+2026-07-18 03:04:04 | INFO | BI | CALL a function to summarize the datasets........
+2026-07-18 03:04:04 | INFO | BI | ========================
+2026-07-18 03:04:04 | INFO | BI | SUMMARY
+2026-07-18 03:04:04 | INFO | BI | ========================
+2026-07-18 03:04:04 | INFO | BI | Customers:  201 rows, 6 columns
+2026-07-18 03:04:04 | INFO | BI | Products:   100 rows, 6 columns
+2026-07-18 03:04:04 | INFO | BI | Sales:      2400 rows, 9 columns
+2026-07-18 03:04:04 | INFO | BI | ========================
+2026-07-18 03:04:04 | INFO | BI | ANALYST NOTES:
+2026-07-18 03:04:04 | INFO | BI | Note any data quality issues.
+2026-07-18 03:04:04 | INFO | BI | We will clean data later.
+2026-07-18 03:04:04 | INFO | BI | ========================
+2026-07-18 03:04:04 | INFO | BI | CALL a function to show charts........
+2026-07-18 03:04:34 | INFO | BI | Workflow complete
+2026-07-18 03:04:34 | INFO | BI | CLOSE chart windows to continue.
+2026-07-18 03:04:34 | INFO | BI | Terminate this process with CTRL+c as needed.
+2026-07-18 03:04:34 | INFO | BI | ========================
+2026-07-18 03:04:34 | INFO | BI | Executed successfully!
+2026-07-18 03:04:34 | INFO | BI | ========================

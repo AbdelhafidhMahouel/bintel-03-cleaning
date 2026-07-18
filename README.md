@@ -5,6 +5,7 @@
 [![MIT](https://img.shields.io/badge/license-see%20LICENSE-yellow.svg)](./LICENSE)
 
 > Professional Python project: cleaning and preparing smart sales data for ETVL.
+> Extended with a custom manufacturing downtime analysis (Phase 5).
 
 ## Project Description
 
@@ -110,6 +111,12 @@ uv run python -m bizintel.app_case
 # run the example module to explore cleaning
 uv run python -m bizintel.data_prep_case
 
+# run my custom modification (Phase 4): sales by payment type
+uv run python -m bizintel.app_abdel
+
+# run my custom project (Phase 5): manufacturing downtime analysis
+uv run python -m bizintel.downtime_abdel
+
 # run common chores
 uv run ruff format .
 uv run ruff check . --fix
@@ -198,6 +205,23 @@ Replace these placeholders with screenshots from your own project run:
 ![Total Sales by Region](./docs/images/Figure_1.png)
 
 ![Total Sales by Product Category](./docs/images/Figure_2.png)
+
+![Total Sales by Payment Type](./docs/images/payment_type_chart.png)
+
+My Phase 4 modification adds a third breakdown, total sales by payment type,
+using the PaymentType column I added to sales_data.csv earlier in this project.
+CreditCard was the top payment method by total sales. The chart also revealed
+a small near-zero bar for an inconsistently-cased "creditcard" entry, exposing
+a real data quality issue from the raw data rather than hiding it.
+
+![Total Downtime by Production Line and Cause](./docs/images/downtime_charts.png)
+
+For Phase 5, I applied the same load, aggregate, visualize, and log pattern to
+a manufacturing downtime dataset instead of sales data, reflecting my work as
+an engineering team lead in manufacturing. Line-1 had the highest total
+downtime at 12,222.7 minutes, and Mechanical Failure was the leading cause at
+11,298.7 minutes. See [docs/index.md](docs/index.md) for the full write-up.
+
 
 ## Project Documentation
 

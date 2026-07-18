@@ -1,0 +1,506 @@
+RecordID,ShiftDate,ProductionLine,Shift,DowntimeCause,DowntimeMinutes
+1,2026-01-01,Line-1,Swing,Quality Hold,17.7
+2,2026-01-01,Line-2,Night,Mechanical Failure,93.8
+3,2026-01-01,Line-3,Swing,Mechanical Failure,20.9
+4,2026-01-01,Line-3,Swing,Mechanical Failure,104.0
+5,2026-01-02,Line-3,Day,Operator Break,13.2
+6,2026-01-02,Line-3,Day,Electrical Fault,30.2
+7,2026-01-02,Line-4,Night,Planned Maintenance,36.6
+8,2026-01-03,Line-3,Night,Mechanical Failure,41.0
+9,2026-01-04,Line-1,Swing,Material Shortage,84.3
+10,2026-01-04,Line-2,Night,Planned Maintenance,19.3
+11,2026-01-04,Line-3,Swing,Quality Hold,
+12,2026-01-04,Line-3,Day,Mechanical Failure,78.2
+13,2026-01-05,Line-1,Swing,Mechanical Failure,121.9
+14,2026-01-05,Line-1,Night,Material Shortage,158.2
+15,2026-01-05,Line-2,Night,Changeover,144.5
+16,2026-01-05,Line-3,Swing,Changeover,121.2
+17,2026-01-05,Line-4,Night,Material Shortage,124.2
+18,2026-01-06,Line-1,Night,Changeover,169.6
+19,2026-01-06,Line-1,Swing,Mechanical Failure,25.5
+20,2026-01-06,Line-2,Day,Quality Hold,74.6
+21,2026-01-06,Line-4,Swing,Changeover,53.6
+22,2026-01-07,Line-1,Night,Electrical Fault,77.7
+23,2026-01-07,Line-1,Swing,Quality Hold,71.6
+24,2026-01-07,Line-2,Day,Mechanical Failure,120.2
+25,2026-01-07,Line-3,Swing,Electrical Fault,30.5
+26,2026-01-07,Line-4,Day,,95.2
+27,2026-01-08,Line-3,Swing,Changeover,23.1
+28,2026-01-08,Line-3,Night,Changeover,38.4
+29,2026-01-09,Line-1,Swing,Material Shortage,22.9
+30,2026-01-09,Line-3,Night,Mechanical Failure,158.0
+31,2026-01-10,Line-1,Swing,Material Shortage,88.0
+32,2026-01-10,Line-2,Swing,Changeover,59.6
+33,2026-01-10,Line-2,Day,Mechanical Failure,65.0
+34,2026-01-10,Line-3,Night,Mechanical Failure,171.4
+35,2026-01-10,Line-4,Night,Material Shortage,9.7
+36,2026-01-11,Line-1,Night,Planned Maintenance,95.7
+37,2026-01-11,Line-3,Night,Material Shortage,93.0
+38,2026-01-12,Line-4,Swing,Quality Hold,44.7
+39,2026-01-13,Line-1,Night,Mechanical Failure,9.9
+40,2026-01-13,Line-2,Day,Quality Hold,172.4
+41,2026-01-13,Line-3,Swing,Mechanical Failure,-15.0
+42,2026-01-13,Line-4,Day,Changeover,177.4
+43,2026-01-14,Line-2,Night,Mechanical Failure,120.6
+44,2026-01-15,Line-2,Swing,Planned Maintenance,63.2
+45,2026-01-16,Line-1,Night,Operator Break,131.8
+46,2026-01-16,Line-1,Day,Operator Break,9.8
+47,2026-01-16,Line-3,Night,Planned Maintenance,176.6
+48,2026-01-17,Line-1,Day,Mechanical Failure,174.9
+49,2026-01-17,Line-3,Swing,Operator Break,39.1
+50,2026-01-18,Line-1,Swing,Material Shortage,138.6
+51,2026-01-18,Line-2,Day,Mechanical Failure,134.5
+52,2026-01-18,Line-2,Swing,Quality Hold,147.6
+53,2026-01-18,Line-3,Night,Mechanical Failure,94.3
+54,2026-01-19,Line-4,Swing,Material Shortage,26.1
+55,2026-01-20,Line-1,Day,Operator Break,14.9
+56,2026-01-20,Line-1,Day,Electrical Fault,140.1
+57,2026-01-20,Line-2,Day,Changeover,112.2
+58,2026-01-20,Line-3,Night,Electrical Fault,93.9
+59,2026-01-21,Line-1,Night,Material Shortage,158.3
+60,2026-01-22,Line-1,Day,Changeover,73.7
+61,2026-01-22,Line-1,day,Mechanical Failure,47.1
+62,2026-01-22,Line-2,Day,Operator Break,32.0
+63,2026-01-23,Line-1,Swing,Mechanical Failure,171.7
+64,2026-01-23,Line-2,Day,Operator Break,150.7
+65,2026-01-23,Line-2,Day,Quality Hold,179.0
+66,2026-01-23,Line-3,Day,Changeover,21.1
+67,2026-01-23,Line-3,Swing,Mechanical Failure,102.0
+68,2026-01-23,Line-4,Swing,Changeover,114.2
+69,2026-01-24,Line-1,Day,Operator Break,143.0
+70,2026-01-24,Line-3,Swing,Mechanical Failure,141.3
+71,2026-01-24,Line-4,Swing,Planned Maintenance,123.3
+72,2026-01-25,Line-2,Night,Changeover,53.8
+73,2026-01-25,Line-2,Night,Mechanical Failure,161.7
+74,2026-01-25,Line-3,Night,Mechanical Failure,50.6
+75,2026-01-26,Line-1,Day,Changeover,64.4
+76,2026-01-26,Line-4,Day,Material Shortage,46.7
+77,2026-01-27,Line-1,Swing,Mechanical Failure,40.3
+78,2026-01-27,Line-2,Night,Quality Hold,55.7
+79,2026-01-27,Line-3,Swing,Changeover,8.2
+80,2026-01-27,Line-4,Day,Quality Hold,101.4
+81,2026-01-28,Line-1,Day,mechanical failure,23.6
+82,2026-01-28,Line-1,Night,Changeover,91.6
+83,2026-01-28,Line-3,Night,Mechanical Failure,45.2
+84,2026-01-28,Line-4,Swing,Operator Break,176.8
+85,2026-01-29,Line-2,Swing,Mechanical Failure,19.8
+86,2026-01-30,Line-2,Night,Electrical Fault,85.4
+87,2026-01-30,Line-3,Day,Electrical Fault,173.3
+88,2026-01-30,Line-3,Night,Changeover,11.0
+89,2026-01-31,Line-1,Day,Changeover,19.7
+90,2026-01-31,Line-2,Day,Material Shortage,5.9
+91,2026-01-31,Line-3,Day,Changeover,12.3
+92,2026-01-31,Line-4,Night,Electrical Fault,107.5
+93,2026-02-01,Line-1,Night,Operator Break,142.2
+94,2026-02-02,Line-1,Night,Material Shortage,30.3
+95,2026-02-02,Line-4,Night,Quality Hold,93.5
+96,2026-02-02,Line-4,Night,Quality Hold,104.5
+97,2026-02-03,Line-2,Day,Mechanical Failure,28.3
+98,2026-02-03,Line-3,Swing,Planned Maintenance,102.7
+99,2026-02-04,Line-3,Swing,Planned Maintenance,135.9
+100,2026-02-04,Line-4,Night,Material Shortage,135.5
+101,2026-02-05,Line-1,Swing,Electrical Fault,137.4
+102,2026-02-05,Line-2,Swing,Planned Maintenance,18.4
+103,2026-02-05,Line-2,Night,Electrical Fault,13.2
+104,2026-02-05,Line-4,Swing,Electrical Fault,135.1
+105,2026-02-06,Line-1,Day,Changeover,90.0
+106,2026-02-06,Line-3,Night,Changeover,129.1
+107,2026-02-06,Line-4,Swing,Quality Hold,178.8
+108,2026-02-06,Line-4,Night,Mechanical Failure,176.2
+109,2026-02-07,Line-2,Day,Planned Maintenance,174.4
+110,2026-02-07,Line-2,Swing,Operator Break,72.7
+111,2026-02-08,Line-1,Day,Quality Hold,50.8
+112,2026-02-08,Line-2,Day,Quality Hold,45.5
+113,2026-02-08,Line-4,Day,Mechanical Failure,91.0
+114,2026-02-09,Line-1,Night,Mechanical Failure,65.2
+115,2026-02-09,Line-2,Day,Changeover,64.2
+116,2026-02-09,Line-3,Night,Mechanical Failure,134.5
+117,2026-02-09,Line-4,Swing,Changeover,157.2
+118,2026-02-10,Line-1,Swing,Operator Break,54.1
+119,2026-02-10,Line-1,Day,Planned Maintenance,55.0
+120,2026-02-10,Line-3,Swing,Material Shortage,38.2
+121,2026-02-10,Line-4,Day,Planned Maintenance,115.4
+122,2026-02-10,Line-4,Night,Material Shortage,130.9
+123,2026-02-11,Line-1,Swing,Material Shortage,29.3
+124,2026-02-11,Line-1,Swing,Changeover,164.6
+125,2026-02-11,Line-3,Swing,Electrical Fault,49.8
+126,2026-02-11,Line-3,Night,Operator Break,50.5
+127,2026-02-12,Line-1,Day,Mechanical Failure,33.3
+128,2026-02-12,Line-1,Day,Material Shortage,147.1
+129,2026-02-12,Line-3,Swing,Changeover,100.9
+130,2026-02-12,Line-4,Swing,Material Shortage,60.9
+131,2026-02-13,Line-1,Day,Quality Hold,77.2
+132,2026-02-13,Line-2,Swing,Electrical Fault,136.6
+133,2026-02-13,Line-3,Day,Quality Hold,97.6
+134,2026-02-14,Line-2,Swing,Changeover,83.0
+135,2026-02-15,Line-2,Swing,Quality Hold,161.7
+136,2026-02-15,Line-3,Day,Mechanical Failure,167.8
+137,2026-02-15,Line-3,Night,Operator Break,175.1
+138,2026-02-15,Line-4,Day,Mechanical Failure,96.4
+139,2026-02-17,Line-2,Day,Planned Maintenance,45.7
+140,2026-02-18,Line-1,Night,Electrical Fault,116.4
+141,2026-02-18,Line-3,Swing,Material Shortage,107.0
+142,2026-02-18,Line-4,Night,Mechanical Failure,99.1
+143,2026-02-19,Line-2,Night,Planned Maintenance,47.4
+144,2026-02-19,Line-3,Day,Operator Break,128.3
+145,2026-02-19,Line-4,Day,Changeover,123.0
+146,2026-02-20,Line-1,Day,Quality Hold,166.9
+147,2026-02-20,Line-2,Night,Changeover,78.6
+148,2026-02-20,Line-4,Night,Planned Maintenance,16.8
+149,2026-02-21,Line-1,Swing,Quality Hold,38.9
+150,2026-02-21,Line-2,Swing,Mechanical Failure,114.1
+151,2026-02-22,Line-1,Night,Mechanical Failure,73.9
+152,2026-02-22,Line-2,Swing,Mechanical Failure,15.5
+153,2026-02-22,Line-3,Night,Mechanical Failure,18.9
+154,2026-02-22,Line-4,Day,Quality Hold,96.8
+155,2026-02-23,Line-1,Night,Quality Hold,151.8
+156,2026-02-23,Line-3,Day,Mechanical Failure,19.1
+157,2026-02-23,Line-4,Night,Operator Break,41.3
+158,2026-02-24,Line-1,Swing,Mechanical Failure,128.4
+159,2026-02-24,Line-2,Day,Changeover,134.0
+160,2026-02-24,Line-2,Swing,Mechanical Failure,76.9
+161,2026-02-25,Line-1,Swing,Mechanical Failure,166.0
+162,2026-02-25,Line-2,Night,Changeover,52.7
+163,2026-02-26,Line-1,Swing,Electrical Fault,131.3
+164,2026-02-27,Line-1,Day,Changeover,172.4
+165,2026-02-27,Line-3,Swing,Planned Maintenance,28.2
+166,2026-02-27,Line-4,Night,Electrical Fault,126.1
+167,2026-02-28,Line-1,Swing,Operator Break,85.6
+168,2026-02-28,Line-4,Day,Electrical Fault,16.3
+169,2026-02-28,Line-4,Day,Changeover,100.3
+170,2026-03-01,Line-1,Day,Operator Break,51.4
+171,2026-03-01,Line-1,Day,Mechanical Failure,78.7
+172,2026-03-01,Line-4,Swing,Changeover,161.0
+173,2026-03-02,Line-1,Swing,Electrical Fault,104.2
+174,2026-03-02,Line-2,Day,Changeover,37.5
+175,2026-03-02,Line-3,Night,Mechanical Failure,16.3
+176,2026-03-02,Line-4,Night,Material Shortage,118.7
+177,2026-03-03,Line-1,Day,Mechanical Failure,88.1
+178,2026-03-03,Line-1,Day,Planned Maintenance,165.0
+179,2026-03-03,Line-2,Day,Mechanical Failure,38.2
+180,2026-03-04,Line-2,Swing,Material Shortage,140.6
+181,2026-03-04,Line-4,Day,Mechanical Failure,64.5
+182,2026-03-05,Line-1,Day,Material Shortage,119.0
+183,2026-03-05,Line-2,Swing,Changeover,70.1
+184,2026-03-05,Line-4,Swing,Material Shortage,16.1
+185,2026-03-06,Line-1,Night,Material Shortage,116.9
+186,2026-03-06,Line-1,Day,Quality Hold,74.6
+187,2026-03-06,Line-2,Night,Electrical Fault,171.8
+188,2026-03-06,Line-3,Swing,Changeover,156.2
+189,2026-03-07,Line-1,Swing,Quality Hold,40.6
+190,2026-03-07,Line-2,Swing,Mechanical Failure,20.8
+191,2026-03-07,Line-4,Day,Mechanical Failure,101.5
+192,2026-03-08,Line-3,Night,Material Shortage,30.5
+193,2026-03-08,Line-4,Day,Mechanical Failure,90.8
+194,2026-03-09,Line-3,Day,Operator Break,89.5
+195,2026-03-09,Line-4,Day,Operator Break,113.6
+196,2026-03-09,Line-4,Day,Quality Hold,154.9
+197,2026-03-10,Line-3,Day,Material Shortage,12.3
+198,2026-03-10,Line-3,Night,Mechanical Failure,67.9
+199,2026-03-10,Line-4,Day,Operator Break,152.4
+200,2026-03-11,Line-3,Night,Changeover,153.6
+201,2026-03-11,Line-3,Swing,Quality Hold,58.9
+202,2026-03-11,Line-4,Night,Changeover,93.1
+203,2026-03-11,Line-4,Day,Mechanical Failure,113.3
+204,2026-03-12,Line-1,Swing,Quality Hold,141.5
+205,2026-03-12,Line-2,Swing,Changeover,16.7
+206,2026-03-12,Line-3,Day,Planned Maintenance,93.3
+207,2026-03-13,Line-1,Day,Operator Break,59.9
+208,2026-03-13,Line-3,Night,Operator Break,28.8
+209,2026-03-13,Line-3,Day,Operator Break,133.1
+210,2026-03-14,Line-1,Swing,Operator Break,165.3
+211,2026-03-14,Line-1,Day,Quality Hold,131.2
+212,2026-03-14,Line-2,Night,Quality Hold,32.8
+213,2026-03-14,Line-4,Day,Electrical Fault,173.8
+214,2026-03-14,Line-4,Swing,Mechanical Failure,51.0
+215,2026-03-15,Line-1,Swing,Mechanical Failure,36.9
+216,2026-03-15,Line-2,Night,Changeover,70.9
+217,2026-03-15,Line-4,Night,Operator Break,174.1
+218,2026-03-16,Line-1,Swing,Operator Break,115.2
+219,2026-03-16,Line-2,Swing,Changeover,69.6
+220,2026-03-16,Line-3,Day,Changeover,35.9
+221,2026-03-17,Line-1,Swing,Quality Hold,177.2
+222,2026-03-17,Line-4,Night,Mechanical Failure,31.1
+223,2026-03-18,Line-2,Day,Mechanical Failure,44.8
+224,2026-03-18,Line-4,Night,Changeover,23.6
+225,2026-03-19,Line-1,Swing,Material Shortage,108.1
+226,2026-03-19,Line-2,Day,Mechanical Failure,168.9
+227,2026-03-19,Line-2,Day,Quality Hold,83.9
+228,2026-03-19,Line-3,Night,Planned Maintenance,75.3
+229,2026-03-19,Line-4,Day,Quality Hold,103.4
+230,2026-03-20,Line-1,Night,Operator Break,133.4
+231,2026-03-20,Line-1,Day,Mechanical Failure,5.1
+232,2026-03-20,Line-2,Swing,Mechanical Failure,32.9
+233,2026-03-20,Line-4,Day,Changeover,95.7
+234,2026-03-21,Line-3,Night,Electrical Fault,57.5
+235,2026-03-21,Line-4,Night,Material Shortage,70.7
+236,2026-03-21,Line-4,Swing,Quality Hold,86.4
+237,2026-03-22,Line-2,Day,Electrical Fault,117.7
+238,2026-03-22,Line-3,Night,Mechanical Failure,116.3
+239,2026-03-23,Line-4,Day,Operator Break,7.7
+240,2026-03-24,Line-1,Night,Mechanical Failure,32.9
+241,2026-03-24,Line-3,Swing,Material Shortage,71.4
+242,2026-03-24,Line-3,Night,Operator Break,176.8
+243,2026-03-25,Line-1,Night,Quality Hold,155.1
+244,2026-03-25,Line-1,Swing,Operator Break,45.9
+245,2026-03-25,Line-4,Night,Operator Break,30.3
+246,2026-03-26,Line-1,Night,Operator Break,65.4
+247,2026-03-26,Line-2,Day,Mechanical Failure,126.2
+248,2026-03-27,Line-2,Day,Planned Maintenance,148.4
+249,2026-03-27,Line-4,Day,Electrical Fault,40.6
+250,2026-03-27,Line-4,Day,Mechanical Failure,153.4
+251,2026-03-29,Line-1,Day,Mechanical Failure,137.5
+252,2026-03-29,Line-2,Swing,Changeover,8.7
+253,2026-03-29,Line-3,Day,Quality Hold,69.4
+254,2026-03-29,Line-4,Swing,Material Shortage,10.4
+255,2026-03-29,Line-4,Swing,Mechanical Failure,95.8
+256,2026-03-30,Line-1,Night,Mechanical Failure,104.1
+257,2026-03-30,Line-1,Night,Operator Break,20.9
+258,2026-03-30,Line-3,Night,Mechanical Failure,138.4
+259,2026-03-31,Line-1,Day,Changeover,144.4
+260,2026-03-31,Line-1,Day,Operator Break,108.7
+261,2026-03-31,Line-3,Swing,Planned Maintenance,169.2
+262,2026-03-31,Line-4,Day,Operator Break,139.2
+263,2026-04-01,Line-1,Night,Changeover,21.7
+264,2026-04-02,Line-1,Swing,Mechanical Failure,51.1
+265,2026-04-02,Line-3,Night,Electrical Fault,85.7
+266,2026-04-02,Line-3,Night,Material Shortage,125.6
+267,2026-04-03,Line-1,Night,Mechanical Failure,152.5
+268,2026-04-03,Line-4,Night,Planned Maintenance,106.4
+269,2026-04-03,Line-4,Day,Changeover,117.5
+270,2026-04-04,Line-2,Swing,Quality Hold,149.6
+271,2026-04-05,Line-4,Swing,Operator Break,50.3
+272,2026-04-06,Line-3,Day,Changeover,177.2
+273,2026-04-07,Line-2,Day,Quality Hold,23.7
+274,2026-04-07,Line-3,Swing,Mechanical Failure,74.8
+275,2026-04-07,Line-3,Swing,Quality Hold,92.6
+276,2026-04-08,Line-1,Swing,Material Shortage,75.8
+277,2026-04-08,Line-4,Day,Quality Hold,119.2
+278,2026-04-08,Line-4,Night,Quality Hold,154.2
+279,2026-04-09,Line-3,Swing,Quality Hold,22.1
+280,2026-04-09,Line-4,Night,Quality Hold,32.4
+281,2026-04-09,Line-4,Swing,Changeover,8.4
+282,2026-04-10,Line-2,Night,Changeover,6.9
+283,2026-04-11,Line-1,Night,Mechanical Failure,130.3
+284,2026-04-11,Line-3,Day,Planned Maintenance,84.9
+285,2026-04-11,Line-4,Night,Mechanical Failure,143.7
+286,2026-04-11,Line-4,Swing,Material Shortage,76.8
+287,2026-04-12,Line-2,Swing,Material Shortage,168.2
+288,2026-04-13,Line-2,Swing,Mechanical Failure,18.2
+289,2026-04-13,Line-2,Swing,Quality Hold,123.1
+290,2026-04-13,Line-4,Night,Changeover,171.9
+291,2026-04-14,Line-4,Day,Operator Break,17.1
+292,2026-04-15,Line-2,Day,Changeover,116.8
+293,2026-04-16,Line-1,Night,Quality Hold,141.5
+294,2026-04-16,Line-2,Swing,Quality Hold,125.3
+295,2026-04-17,Line-1,Swing,Electrical Fault,57.8
+296,2026-04-17,Line-2,Night,Quality Hold,120.4
+297,2026-04-17,Line-2,Swing,Mechanical Failure,58.1
+298,2026-04-17,Line-3,Night,Operator Break,142.2
+299,2026-04-17,Line-4,Night,Material Shortage,120.0
+300,2026-04-18,Line-1,Night,Electrical Fault,111.4
+301,2026-04-18,Line-4,Swing,Planned Maintenance,41.5
+302,2026-04-18,Line-4,Swing,Planned Maintenance,34.4
+303,2026-04-20,Line-4,Night,Mechanical Failure,151.9
+304,2026-04-21,Line-2,Swing,Changeover,149.7
+305,2026-04-21,Line-3,Swing,Changeover,30.3
+306,2026-04-21,Line-4,Day,Material Shortage,156.0
+307,2026-04-21,Line-4,Day,Mechanical Failure,61.1
+308,2026-04-22,Line-2,Swing,Changeover,78.3
+309,2026-04-22,Line-4,Night,Quality Hold,8.6
+310,2026-04-23,Line-1,Day,Material Shortage,89.8
+311,2026-04-23,Line-3,Night,Mechanical Failure,21.5
+312,2026-04-23,Line-3,Night,Changeover,88.0
+313,2026-04-23,Line-4,Swing,Changeover,78.9
+314,2026-04-24,Line-3,Swing,Changeover,177.3
+315,2026-04-24,Line-3,Night,Changeover,40.6
+316,2026-04-24,Line-4,Swing,Mechanical Failure,129.8
+317,2026-04-25,Line-1,Day,Changeover,102.0
+318,2026-04-25,Line-2,Swing,Electrical Fault,6.1
+319,2026-04-25,Line-3,Night,Quality Hold,15.5
+320,2026-04-25,Line-3,Night,Operator Break,112.1
+321,2026-04-27,Line-1,Night,Quality Hold,22.7
+322,2026-04-27,Line-1,Day,Operator Break,78.8
+323,2026-04-27,Line-2,Swing,Operator Break,29.3
+324,2026-04-27,Line-3,Swing,Mechanical Failure,11.0
+325,2026-04-27,Line-4,Swing,Material Shortage,11.9
+326,2026-04-28,Line-1,Night,Quality Hold,75.8
+327,2026-04-28,Line-1,Day,Mechanical Failure,72.7
+328,2026-04-29,Line-1,Night,Mechanical Failure,117.8
+329,2026-04-29,Line-1,Day,Operator Break,114.7
+330,2026-04-29,Line-2,Night,Quality Hold,177.7
+331,2026-04-29,Line-4,Day,Changeover,53.2
+332,2026-04-30,Line-2,Day,Changeover,135.8
+333,2026-04-30,Line-4,Swing,Quality Hold,129.1
+334,2026-05-01,Line-1,Day,Quality Hold,7.0
+335,2026-05-01,Line-2,Swing,Electrical Fault,132.7
+336,2026-05-01,Line-3,Night,Mechanical Failure,69.3
+337,2026-05-01,Line-3,Night,Quality Hold,87.2
+338,2026-05-01,Line-4,Swing,Operator Break,33.7
+339,2026-05-02,Line-2,Swing,Planned Maintenance,104.2
+340,2026-05-02,Line-2,Swing,Electrical Fault,113.8
+341,2026-05-03,Line-4,Night,Planned Maintenance,107.3
+342,2026-05-04,Line-2,Night,Changeover,140.0
+343,2026-05-04,Line-2,Day,Planned Maintenance,54.6
+344,2026-05-04,Line-3,Swing,Changeover,107.7
+345,2026-05-05,Line-2,Night,Mechanical Failure,175.7
+346,2026-05-05,Line-4,Swing,Material Shortage,99.5
+347,2026-05-05,Line-4,Swing,Planned Maintenance,40.1
+348,2026-05-06,Line-3,Night,Changeover,129.0
+349,2026-05-07,Line-2,Swing,Material Shortage,98.8
+350,2026-05-07,Line-2,Swing,Planned Maintenance,45.8
+351,2026-05-08,Line-2,Night,Material Shortage,38.1
+352,2026-05-08,Line-2,Day,Mechanical Failure,146.0
+353,2026-05-08,Line-3,Swing,Planned Maintenance,155.0
+354,2026-05-08,Line-4,Swing,Operator Break,70.0
+355,2026-05-08,Line-4,Swing,Planned Maintenance,32.3
+356,2026-05-09,Line-2,Day,Mechanical Failure,178.3
+357,2026-05-09,Line-4,Swing,Operator Break,54.0
+358,2026-05-10,Line-1,Night,Planned Maintenance,173.6
+359,2026-05-10,Line-1,Swing,Planned Maintenance,64.3
+360,2026-05-10,Line-3,Day,Mechanical Failure,69.7
+361,2026-05-11,Line-1,Night,Quality Hold,166.4
+362,2026-05-11,Line-3,Night,Electrical Fault,20.7
+363,2026-05-12,Line-1,Swing,Planned Maintenance,69.9
+364,2026-05-12,Line-2,Day,Mechanical Failure,49.8
+365,2026-05-12,Line-3,Day,Electrical Fault,94.8
+366,2026-05-13,Line-2,Day,Electrical Fault,6.0
+367,2026-05-13,Line-3,Night,Material Shortage,137.6
+368,2026-05-13,Line-4,Swing,Electrical Fault,26.7
+369,2026-05-14,Line-1,Swing,Electrical Fault,30.1
+370,2026-05-14,Line-3,Day,Mechanical Failure,150.7
+371,2026-05-14,Line-4,Night,Mechanical Failure,83.3
+372,2026-05-15,Line-1,Day,Quality Hold,84.2
+373,2026-05-15,Line-1,Swing,Changeover,45.9
+374,2026-05-15,Line-2,Day,Changeover,133.8
+375,2026-05-15,Line-3,Night,Operator Break,81.8
+376,2026-05-15,Line-3,Day,Electrical Fault,77.1
+377,2026-05-15,Line-4,Night,Planned Maintenance,63.5
+378,2026-05-16,Line-1,Day,Electrical Fault,163.1
+379,2026-05-16,Line-1,Day,Mechanical Failure,94.9
+380,2026-05-17,Line-3,Swing,Changeover,50.8
+381,2026-05-17,Line-4,Day,Changeover,77.7
+382,2026-05-18,Line-1,Day,Operator Break,7.8
+383,2026-05-18,Line-3,Swing,Mechanical Failure,150.6
+384,2026-05-18,Line-4,Swing,Changeover,164.6
+385,2026-05-19,Line-1,Day,Planned Maintenance,96.3
+386,2026-05-19,Line-2,Day,Material Shortage,150.1
+387,2026-05-20,Line-2,Night,Quality Hold,115.0
+388,2026-05-20,Line-3,Day,Mechanical Failure,126.1
+389,2026-05-20,Line-4,Night,Planned Maintenance,63.7
+390,2026-05-21,Line-3,Swing,Operator Break,88.4
+391,2026-05-22,Line-1,Night,Planned Maintenance,69.2
+392,2026-05-22,Line-2,Night,Material Shortage,5.8
+393,2026-05-22,Line-3,Night,Mechanical Failure,67.4
+394,2026-05-22,Line-3,Day,Planned Maintenance,156.5
+395,2026-05-22,Line-4,Night,Quality Hold,15.7
+396,2026-05-22,Line-4,Day,Operator Break,91.6
+397,2026-05-23,Line-1,Day,Electrical Fault,20.5
+398,2026-05-23,Line-3,Swing,Material Shortage,172.2
+399,2026-05-23,Line-4,Swing,Mechanical Failure,109.9
+400,2026-05-24,Line-2,Day,Changeover,21.4
+401,2026-05-24,Line-2,Day,Mechanical Failure,26.5
+402,2026-05-24,Line-3,Day,Mechanical Failure,76.0
+403,2026-05-24,Line-4,Day,Mechanical Failure,105.2
+404,2026-05-25,Line-2,Night,Changeover,78.6
+405,2026-05-25,Line-4,Day,Planned Maintenance,64.2
+406,2026-05-25,Line-4,Day,Planned Maintenance,130.2
+407,2026-05-26,Line-4,Night,Mechanical Failure,95.5
+408,2026-05-26,Line-4,Night,Operator Break,48.6
+409,2026-05-27,Line-1,Swing,Mechanical Failure,37.8
+410,2026-05-27,Line-2,Night,Quality Hold,44.5
+411,2026-05-27,Line-3,Swing,Quality Hold,146.6
+412,2026-05-27,Line-3,Day,Mechanical Failure,117.3
+413,2026-05-27,Line-4,Night,Material Shortage,166.8
+414,2026-05-28,Line-2,Swing,Electrical Fault,11.9
+415,2026-05-28,Line-3,Night,Mechanical Failure,15.6
+416,2026-05-29,Line-3,Swing,Mechanical Failure,28.0
+417,2026-05-29,Line-4,Night,Electrical Fault,47.6
+418,2026-05-29,Line-4,Day,Quality Hold,55.3
+419,2026-05-30,Line-1,Night,Changeover,101.0
+420,2026-05-30,Line-2,Night,Changeover,148.3
+421,2026-05-30,Line-3,Day,Mechanical Failure,100.5
+422,2026-05-31,Line-1,Day,Operator Break,46.7
+423,2026-05-31,Line-3,Day,Electrical Fault,140.1
+424,2026-05-31,Line-4,Night,Operator Break,82.0
+425,2026-06-01,Line-1,Swing,Changeover,138.5
+426,2026-06-01,Line-1,Night,Electrical Fault,172.9
+427,2026-06-01,Line-3,Night,Changeover,123.2
+428,2026-06-02,Line-3,Swing,Planned Maintenance,129.0
+429,2026-06-02,Line-3,Night,Mechanical Failure,157.4
+430,2026-06-02,Line-4,Swing,Changeover,178.8
+431,2026-06-03,Line-1,Night,Material Shortage,71.4
+432,2026-06-03,Line-2,Swing,Quality Hold,56.3
+433,2026-06-03,Line-2,Swing,Material Shortage,109.2
+434,2026-06-03,Line-4,Swing,Changeover,37.2
+435,2026-06-03,Line-4,Swing,Planned Maintenance,81.2
+436,2026-06-04,Line-1,Day,Planned Maintenance,62.8
+437,2026-06-04,Line-4,Day,Operator Break,161.0
+438,2026-06-05,Line-2,Night,Operator Break,57.5
+439,2026-06-05,Line-3,Night,Material Shortage,81.5
+440,2026-06-06,Line-2,Swing,Mechanical Failure,123.3
+441,2026-06-06,Line-2,Swing,Operator Break,123.4
+442,2026-06-06,Line-3,Swing,Changeover,75.2
+443,2026-06-07,Line-4,Night,Operator Break,107.8
+444,2026-06-07,Line-4,Night,Material Shortage,147.8
+445,2026-06-08,Line-1,Swing,Operator Break,149.6
+446,2026-06-08,Line-2,Night,Operator Break,125.7
+447,2026-06-09,Line-2,Night,Electrical Fault,94.5
+448,2026-06-09,Line-3,Swing,Mechanical Failure,115.3
+449,2026-06-10,Line-1,Night,Changeover,142.8
+450,2026-06-10,Line-2,Swing,Changeover,22.2
+451,2026-06-10,Line-3,Day,Mechanical Failure,139.6
+452,2026-06-11,Line-3,Night,Mechanical Failure,110.3
+453,2026-06-11,Line-4,Day,Mechanical Failure,34.8
+454,2026-06-12,Line-1,Night,Changeover,145.1
+455,2026-06-12,Line-1,Night,Mechanical Failure,139.9
+456,2026-06-12,Line-2,Swing,Electrical Fault,10.8
+457,2026-06-13,Line-2,Swing,Quality Hold,8.4
+458,2026-06-13,Line-3,Night,Quality Hold,12.7
+459,2026-06-13,Line-3,Day,Quality Hold,48.6
+460,2026-06-13,Line-4,Swing,Mechanical Failure,156.7
+461,2026-06-14,Line-1,Night,Electrical Fault,160.2
+462,2026-06-14,Line-1,Day,Electrical Fault,73.2
+463,2026-06-14,Line-3,Swing,Operator Break,89.8
+464,2026-06-15,Line-1,Day,Changeover,37.6
+465,2026-06-15,Line-3,Day,Changeover,157.5
+466,2026-06-15,Line-4,Day,Changeover,164.8
+467,2026-06-16,Line-2,Swing,Changeover,81.2
+468,2026-06-16,Line-2,Swing,Quality Hold,64.7
+469,2026-06-16,Line-3,Day,Mechanical Failure,100.4
+470,2026-06-17,Line-2,Day,Changeover,42.9
+471,2026-06-17,Line-3,Swing,Operator Break,93.3
+472,2026-06-17,Line-4,Night,Mechanical Failure,128.6
+473,2026-06-17,Line-4,Swing,Material Shortage,82.1
+474,2026-06-18,Line-2,Night,Material Shortage,27.0
+475,2026-06-18,Line-2,Day,Quality Hold,21.0
+476,2026-06-19,Line-2,Swing,Mechanical Failure,129.4
+477,2026-06-20,Line-1,Night,Operator Break,16.9
+478,2026-06-21,Line-1,Day,Electrical Fault,27.1
+479,2026-06-21,Line-3,Swing,Planned Maintenance,159.5
+480,2026-06-21,Line-3,Day,Operator Break,35.9
+481,2026-06-21,Line-4,Swing,Mechanical Failure,128.2
+482,2026-06-22,Line-1,Swing,Operator Break,22.1
+483,2026-06-22,Line-1,Swing,Mechanical Failure,164.7
+484,2026-06-22,Line-4,Night,Mechanical Failure,39.7
+485,2026-06-23,Line-1,Night,Mechanical Failure,59.4
+486,2026-06-23,Line-1,Night,Operator Break,103.8
+487,2026-06-23,Line-2,Night,Material Shortage,167.0
+488,2026-06-23,Line-2,Night,Quality Hold,66.1
+489,2026-06-23,Line-3,Day,Operator Break,107.4
+490,2026-06-24,Line-3,Day,Planned Maintenance,65.5
+491,2026-06-25,Line-1,Night,Material Shortage,43.6
+492,2026-06-25,Line-1,Night,Mechanical Failure,170.6
+493,2026-06-25,Line-2,Night,Material Shortage,125.5
+494,2026-06-26,Line-1,Swing,Quality Hold,153.1
+495,2026-06-26,Line-3,Day,Operator Break,149.4
+496,2026-06-27,Line-1,Night,Electrical Fault,50.5
+497,2026-06-27,Line-3,Swing,Mechanical Failure,116.4
+498,2026-06-27,Line-4,Night,Changeover,128.5
+499,2026-06-27,Line-4,Day,Material Shortage,82.9
+500,2026-06-28,Line-2,Day,Operator Break,29.8
+501,2026-06-28,Line-4,Night,Changeover,169.7
+502,2026-06-29,Line-2,Swing,Planned Maintenance,25.0
+503,2026-06-29,Line-2,Swing,Mechanical Failure,90.2
+504,2026-06-29,Line-3,Swing,Mechanical Failure,127.8
+505,2026-06-29,Line-4,Day,Changeover,87.0
