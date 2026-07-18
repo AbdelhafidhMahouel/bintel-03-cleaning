@@ -1,0 +1,156 @@
+2026-07-17 21:14:10 | INFO | BI | === RUN START ===
+2026-07-17 21:14:10 | INFO | BI | project=BI
+2026-07-17 21:14:10 | INFO | BI | repo_dir=bintel-03-cleaning
+2026-07-17 21:14:10 | INFO | BI | python=3.14.2
+2026-07-17 21:14:10 | INFO | BI | os=Windows 11
+2026-07-17 21:14:10 | INFO | BI | shell=powershell
+2026-07-17 21:14:10 | INFO | BI | cwd=.
+2026-07-17 21:14:10 | INFO | BI | github_actions=False
+2026-07-17 21:14:10 | INFO | BI | ========================
+2026-07-17 21:14:10 | INFO | BI | START main()
+2026-07-17 21:14:10 | INFO | BI | ========================
+2026-07-17 21:14:10 | INFO | BI | Raw data:  = data\raw
+2026-07-17 21:14:10 | INFO | BI | Customers: = data\raw\customers_data.csv
+2026-07-17 21:14:10 | INFO | BI | Products:  = data\raw\products_data.csv
+2026-07-17 21:14:10 | INFO | BI | Sales:     = data\raw\sales_data.csv
+2026-07-17 21:14:10 | INFO | BI | CALL a function to load each dataset.............
+2026-07-17 21:14:10 | INFO | BI | Loading customers from data\raw\customers_data.csv
+2026-07-17 21:14:10 | INFO | BI | Loaded: 201 rows, 6 columns
+2026-07-17 21:14:10 | INFO | BI | Loading products from data\raw\products_data.csv
+2026-07-17 21:14:10 | INFO | BI | Loaded: 100 rows, 6 columns
+2026-07-17 21:14:10 | INFO | BI | Loading sales from data\raw\sales_data.csv
+2026-07-17 21:14:10 | INFO | BI | Loaded: 2400 rows, 9 columns
+2026-07-17 21:14:10 | INFO | BI | CALL a function to get sales by region........
+2026-07-17 21:14:10 | INFO | BI | Aggregating sales by region
+2026-07-17 21:14:10 | INFO | BI |   Top region: East ($1,234,686.51)
+2026-07-17 21:14:10 | INFO | BI | Returning DataFrame with total sales by region
+2026-07-17 21:14:10 | INFO | BI | CALL a function to plot sales by region........
+2026-07-17 21:14:10 | INFO | BI | Creating chart: Total Sales by Region
+2026-07-17 21:14:11 | INFO | BI | CALL a function to get sales by product category........
+2026-07-17 21:14:11 | INFO | BI | Aggregating sales by product category
+2026-07-17 21:14:11 | INFO | BI |   Top category: Office ($1,420,376.39)
+2026-07-17 21:14:11 | INFO | BI | CALL a function to plot sales by product category........
+2026-07-17 21:14:11 | INFO | BI | Creating chart: Total Sales by Product Category
+2026-07-17 21:14:11 | INFO | BI | CALL a function to summarize the datasets........
+2026-07-17 21:14:11 | INFO | BI | ========================
+2026-07-17 21:14:11 | INFO | BI | SUMMARY
+2026-07-17 21:14:11 | INFO | BI | ========================
+2026-07-17 21:14:11 | INFO | BI | Customers:  201 rows, 6 columns
+2026-07-17 21:14:11 | INFO | BI | Products:   100 rows, 6 columns
+2026-07-17 21:14:11 | INFO | BI | Sales:      2400 rows, 9 columns
+2026-07-17 21:14:11 | INFO | BI | ========================
+2026-07-17 21:14:11 | INFO | BI | ANALYST NOTES:
+2026-07-17 21:14:11 | INFO | BI | Note any data quality issues.
+2026-07-17 21:14:11 | INFO | BI | We will clean data later.
+2026-07-17 21:14:11 | INFO | BI | ========================
+2026-07-17 21:14:11 | INFO | BI | CALL a function to show charts........
+2026-07-17 21:15:38 | INFO | BI | Workflow complete
+2026-07-17 21:15:38 | INFO | BI | CLOSE chart windows to continue.
+2026-07-17 21:15:38 | INFO | BI | Terminate this process with CTRL+c as needed.
+2026-07-17 21:15:38 | INFO | BI | ========================
+2026-07-17 21:15:38 | INFO | BI | Executed successfully!
+2026-07-17 21:15:38 | INFO | BI | ========================
+2026-07-17 21:15:50 | INFO | BI | === RUN START ===
+2026-07-17 21:15:50 | INFO | BI | project=BI
+2026-07-17 21:15:50 | INFO | BI | repo_dir=bintel-03-cleaning
+2026-07-17 21:15:50 | INFO | BI | python=3.14.2
+2026-07-17 21:15:50 | INFO | BI | os=Windows 11
+2026-07-17 21:15:50 | INFO | BI | shell=powershell
+2026-07-17 21:15:50 | INFO | BI | cwd=.
+2026-07-17 21:15:50 | INFO | BI | github_actions=False
+2026-07-17 21:15:50 | INFO | BI | ========================
+2026-07-17 21:15:50 | INFO | BI | START main()
+2026-07-17 21:15:50 | INFO | BI | ========================
+2026-07-17 21:15:50 | INFO | BI | Raw data:  = data\raw
+2026-07-17 21:15:50 | INFO | BI | Customers: = data\raw\customers_data.csv
+2026-07-17 21:15:50 | INFO | BI | Products:  = data\raw\products_data.csv
+2026-07-17 21:15:50 | INFO | BI | Sales:     = data\raw\sales_data.csv
+2026-07-17 21:15:50 | INFO | BI | CALL a function to load each dataset.............
+2026-07-17 21:15:50 | INFO | BI | Loading customers from data\raw\customers_data.csv
+2026-07-17 21:15:50 | INFO | BI | Loaded: 201 rows, 6 columns
+2026-07-17 21:15:50 | INFO | BI | Loading products from data\raw\products_data.csv
+2026-07-17 21:15:50 | INFO | BI | Loaded: 100 rows, 6 columns
+2026-07-17 21:15:50 | INFO | BI | Loading sales from data\raw\sales_data.csv
+2026-07-17 21:15:50 | INFO | BI | Loaded: 2400 rows, 9 columns
+2026-07-17 21:15:50 | INFO | BI | CALL a function to get sales by region........
+2026-07-17 21:15:50 | INFO | BI | Aggregating sales by region
+2026-07-17 21:15:50 | INFO | BI |   Top region: East ($1,234,686.51)
+2026-07-17 21:15:50 | INFO | BI | Returning DataFrame with total sales by region
+2026-07-17 21:15:50 | INFO | BI | CALL a function to plot sales by region........
+2026-07-17 21:15:50 | INFO | BI | Creating chart: Total Sales by Region
+2026-07-17 21:15:50 | INFO | BI | CALL a function to get sales by product category........
+2026-07-17 21:15:50 | INFO | BI | Aggregating sales by product category
+2026-07-17 21:15:50 | INFO | BI |   Top category: Office ($1,420,376.39)
+2026-07-17 21:15:50 | INFO | BI | CALL a function to plot sales by product category........
+2026-07-17 21:15:50 | INFO | BI | Creating chart: Total Sales by Product Category
+2026-07-17 21:15:50 | INFO | BI | CALL a function to summarize the datasets........
+2026-07-17 21:15:50 | INFO | BI | ========================
+2026-07-17 21:15:50 | INFO | BI | SUMMARY
+2026-07-17 21:15:50 | INFO | BI | ========================
+2026-07-17 21:15:50 | INFO | BI | Customers:  201 rows, 6 columns
+2026-07-17 21:15:50 | INFO | BI | Products:   100 rows, 6 columns
+2026-07-17 21:15:50 | INFO | BI | Sales:      2400 rows, 9 columns
+2026-07-17 21:15:50 | INFO | BI | ========================
+2026-07-17 21:15:50 | INFO | BI | ANALYST NOTES:
+2026-07-17 21:15:50 | INFO | BI | Note any data quality issues.
+2026-07-17 21:15:50 | INFO | BI | We will clean data later.
+2026-07-17 21:15:50 | INFO | BI | ========================
+2026-07-17 21:15:50 | INFO | BI | CALL a function to show charts........
+2026-07-17 21:15:57 | INFO | BI | Workflow complete
+2026-07-17 21:15:57 | INFO | BI | CLOSE chart windows to continue.
+2026-07-17 21:15:57 | INFO | BI | Terminate this process with CTRL+c as needed.
+2026-07-17 21:15:57 | INFO | BI | ========================
+2026-07-17 21:15:57 | INFO | BI | Executed successfully!
+2026-07-17 21:15:57 | INFO | BI | ========================
+2026-07-17 21:16:03 | INFO | BI | === RUN START ===
+2026-07-17 21:16:03 | INFO | BI | project=BI
+2026-07-17 21:16:03 | INFO | BI | repo_dir=bintel-03-cleaning
+2026-07-17 21:16:03 | INFO | BI | python=3.14.2
+2026-07-17 21:16:03 | INFO | BI | os=Windows 11
+2026-07-17 21:16:03 | INFO | BI | shell=powershell
+2026-07-17 21:16:03 | INFO | BI | cwd=.
+2026-07-17 21:16:03 | INFO | BI | github_actions=False
+2026-07-17 21:16:03 | INFO | BI | ========================
+2026-07-17 21:16:03 | INFO | BI | START main()
+2026-07-17 21:16:03 | INFO | BI | ========================
+2026-07-17 21:16:03 | INFO | BI | Raw data:  = data\raw
+2026-07-17 21:16:03 | INFO | BI | Customers: = data\raw\customers_data.csv
+2026-07-17 21:16:03 | INFO | BI | Products:  = data\raw\products_data.csv
+2026-07-17 21:16:03 | INFO | BI | Sales:     = data\raw\sales_data.csv
+2026-07-17 21:16:03 | INFO | BI | CALL a function to load each dataset.............
+2026-07-17 21:16:03 | INFO | BI | Loading customers from data\raw\customers_data.csv
+2026-07-17 21:16:03 | INFO | BI | Loaded: 201 rows, 6 columns
+2026-07-17 21:16:03 | INFO | BI | Loading products from data\raw\products_data.csv
+2026-07-17 21:16:03 | INFO | BI | Loaded: 100 rows, 6 columns
+2026-07-17 21:16:03 | INFO | BI | Loading sales from data\raw\sales_data.csv
+2026-07-17 21:16:03 | INFO | BI | Loaded: 2400 rows, 9 columns
+2026-07-17 21:16:03 | INFO | BI | CALL a function to get sales by region........
+2026-07-17 21:16:03 | INFO | BI | Aggregating sales by region
+2026-07-17 21:16:03 | INFO | BI |   Top region: East ($1,234,686.51)
+2026-07-17 21:16:03 | INFO | BI | Returning DataFrame with total sales by region
+2026-07-17 21:16:03 | INFO | BI | CALL a function to plot sales by region........
+2026-07-17 21:16:03 | INFO | BI | Creating chart: Total Sales by Region
+2026-07-17 21:16:03 | INFO | BI | CALL a function to get sales by product category........
+2026-07-17 21:16:03 | INFO | BI | Aggregating sales by product category
+2026-07-17 21:16:03 | INFO | BI |   Top category: Office ($1,420,376.39)
+2026-07-17 21:16:03 | INFO | BI | CALL a function to plot sales by product category........
+2026-07-17 21:16:03 | INFO | BI | Creating chart: Total Sales by Product Category
+2026-07-17 21:16:03 | INFO | BI | CALL a function to summarize the datasets........
+2026-07-17 21:16:03 | INFO | BI | ========================
+2026-07-17 21:16:03 | INFO | BI | SUMMARY
+2026-07-17 21:16:03 | INFO | BI | ========================
+2026-07-17 21:16:03 | INFO | BI | Customers:  201 rows, 6 columns
+2026-07-17 21:16:03 | INFO | BI | Products:   100 rows, 6 columns
+2026-07-17 21:16:03 | INFO | BI | Sales:      2400 rows, 9 columns
+2026-07-17 21:16:03 | INFO | BI | ========================
+2026-07-17 21:16:03 | INFO | BI | ANALYST NOTES:
+2026-07-17 21:16:03 | INFO | BI | Note any data quality issues.
+2026-07-17 21:16:03 | INFO | BI | We will clean data later.
+2026-07-17 21:16:03 | INFO | BI | ========================
+2026-07-17 21:16:03 | INFO | BI | CALL a function to show charts........
+2026-07-17 21:22:41 | INFO | BI | Workflow complete
+2026-07-17 21:22:41 | INFO | BI | CLOSE chart windows to continue.
+2026-07-17 21:22:41 | INFO | BI | Terminate this process with CTRL+c as needed.
+2026-07-17 21:22:41 | INFO | BI | ========================
+2026-07-17 21:22:41 | INFO | BI | Executed successfully!
+2026-07-17 21:22:41 | INFO | BI | ========================
