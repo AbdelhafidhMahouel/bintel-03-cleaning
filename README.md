@@ -78,7 +78,7 @@ open a machine terminal in your `Repos` folder:
 
 ```shell
 # Replace username with YOUR GitHub username.
-git clone https://github.com/username/bintel-03-cleaning
+git clone https://github.com/AbdelhafidhMahouel/bintel-03-cleaning
 
 cd bintel-03-cleaning
 code .
