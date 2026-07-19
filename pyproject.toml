@@ -162,4 +162,4 @@ requires = ["hatchling"]
 
 [tool.hatch.build.targets.wheel]
 # CUSTOM: Must match src/ folders.
-packages = ["src/bizintel"]  # REQ.PACKAGES: Discovery rooted at src/.
+packages = ["src/bizintel", "src/analytics_project"]  # REQ.PACKAGES: Discovery rooted at src/.

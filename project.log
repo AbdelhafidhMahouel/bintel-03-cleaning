@@ -368,3 +368,267 @@
 2026-07-18 03:04:34 | INFO | BI | ========================
 2026-07-18 03:04:34 | INFO | BI | Executed successfully!
 2026-07-18 03:04:34 | INFO | BI | ========================
+2026-07-19 05:28:45 | INFO | BI | === RUN START ===
+2026-07-19 05:28:45 | INFO | BI | project=BI
+2026-07-19 05:28:45 | INFO | BI | repo_dir=bintel-03-cleaning
+2026-07-19 05:28:45 | INFO | BI | python=3.14.2
+2026-07-19 05:28:45 | INFO | BI | os=Windows 11
+2026-07-19 05:28:45 | INFO | BI | shell=powershell
+2026-07-19 05:28:45 | INFO | BI | cwd=.
+2026-07-19 05:28:45 | INFO | BI | github_actions=False
+2026-07-19 05:28:45 | INFO | BI | ========================
+2026-07-19 05:28:45 | INFO | BI | START main()
+2026-07-19 05:28:45 | INFO | BI | ========================
+2026-07-19 05:28:45 | INFO | BI | Task 1. LOAD. Call a function to load the dataset......
+2026-07-19 05:28:45 | INFO | BI | Loading customers from data\raw\customers_data.csv
+2026-07-19 05:28:45 | INFO | BI | Loaded: 201 rows, 6 columns
+2026-07-19 05:28:45 | INFO | BI | Task 2. INSPECT. Call a function to inspect the dataset...
+2026-07-19 05:28:45 | INFO | BI | Inspecting customers
+2026-07-19 05:28:45 | INFO | BI |   Columns: ['CustomerID', 'Name', 'Region', 'JoinDate', 'LoyaltyPointsCount', 'PreferredContactMethod']
+2026-07-19 05:28:45 | INFO | BI |   Shape:   201 rows x 6 columns
+2026-07-19 05:28:45 | DEBUG | BI | 
+   CustomerID           Name   Region    JoinDate  LoyaltyPointsCount PreferredContactMethod
+0        1000   Robert Gomez     West  2024-02-25               912.0                  Email
+1        1001     John Silva     East  2020-12-01              2253.0                  Phone
+2        1002  Mark Marshall  Central  2020-08-08              1828.0                  Phone
+3        1003  David Brennan    North  2020-05-21               839.0                  Email
+4        1004  Kerry Collins    North  2023-09-12              4837.0                   Mail
+
+2026-07-19 05:28:45 | INFO | BI | Task 3. CHECK QUALITY BEFORE........
+2026-07-19 05:28:45 | INFO | BI | Quality check: customers
+2026-07-19 05:28:45 | INFO | BI |   Total missing values: 2
+2026-07-19 05:28:45 | WARNING | BI |   Missing by column:
+LoyaltyPointsCount        1
+PreferredContactMethod    1
+dtype: int64
+2026-07-19 05:28:45 | INFO | BI |   Duplicate rows: 0
+2026-07-19 05:28:45 | INFO | BI | Task 4. SUMMARIZE BEFORE..........
+2026-07-19 05:28:45 | INFO | BI | Numeric summary: customers
+2026-07-19 05:28:45 | INFO | BI | 
+       CustomerID  LoyaltyPointsCount
+count      201.00              200.00
+mean      1099.03             2402.20
+std         58.12             1475.66
+min       1000.00             -150.00
+25%       1049.00             1071.75
+50%       1099.00             2212.00
+75%       1149.00             3580.00
+max       1199.00             4954.00
+2026-07-19 05:28:45 | INFO | BI | Task 5. PREPARE DATASET.........
+2026-07-19 05:28:45 | INFO | BI | Preparing customers data
+2026-07-19 05:28:45 | INFO | BI | Customers Prep 1. Normalize Region values
+2026-07-19 05:28:45 | INFO | BI |   Regions after normalization: ['Central', 'East', 'North', 'South', 'South-West', 'West']
+2026-07-19 05:28:45 | INFO | BI | Customers Prep 2. Clean LoyaltyPointsCount (numeric)
+2026-07-19 05:28:45 | WARNING | BI |   2 row(s) with missing or negative LoyaltyPointsCount - will be removed
+2026-07-19 05:28:45 | INFO | BI | Customers Prep 3. Clean PreferredContactMethod (category)
+2026-07-19 05:28:45 | WARNING | BI |   1 row(s) with missing PreferredContactMethod - will be removed
+2026-07-19 05:28:45 | INFO | BI | Customers Prep 4. Remove duplicate rows
+2026-07-19 05:28:45 | INFO | BI |   Rows before: 198
+2026-07-19 05:28:45 | INFO | BI |   Rows after: 198
+2026-07-19 05:28:45 | INFO | BI |   Removed 0 duplicate row(s)
+2026-07-19 05:28:45 | INFO | BI |   Customers prepared: 198 rows
+2026-07-19 05:28:45 | INFO | BI | Task 6. CHECK QUALITY AFTER PREPARATION........
+2026-07-19 05:28:45 | INFO | BI | Quality check: customers prepared
+2026-07-19 05:28:45 | INFO | BI |   Total missing values: 0
+2026-07-19 05:28:45 | INFO | BI |   Duplicate rows: 0
+2026-07-19 05:28:45 | INFO | BI | Task 7. SUMMARIZE AFTER PREPARATION........
+2026-07-19 05:28:45 | INFO | BI | Numeric summary: customers prepared
+2026-07-19 05:28:45 | INFO | BI | 
+       CustomerID  LoyaltyPointsCount
+count      198.00              198.00
+mean      1100.24             2414.18
+std         57.68             1471.83
+min       1000.00               26.00
+25%       1051.25             1075.25
+50%       1100.50             2212.00
+75%       1149.75             3678.00
+max       1199.00             4954.00
+2026-07-19 05:28:45 | INFO | BI | Task 8. SAVE PREPARED DATASET........
+2026-07-19 05:28:45 | INFO | BI | Saved customers
+2026-07-19 05:28:45 | INFO | BI |   Rows: 198
+2026-07-19 05:28:45 | INFO | BI |   Path: data\prepared\customers_data_prepared.csv
+2026-07-19 05:28:45 | INFO | BI | Workflow complete
+2026-07-19 05:28:45 | INFO | BI | ========================
+2026-07-19 05:28:45 | INFO | BI | Executed successfully!
+2026-07-19 05:28:45 | INFO | BI | ========================
+2026-07-19 05:29:05 | INFO | BI | === RUN START ===
+2026-07-19 05:29:05 | INFO | BI | project=BI
+2026-07-19 05:29:05 | INFO | BI | repo_dir=bintel-03-cleaning
+2026-07-19 05:29:05 | INFO | BI | python=3.14.2
+2026-07-19 05:29:05 | INFO | BI | os=Windows 11
+2026-07-19 05:29:05 | INFO | BI | shell=powershell
+2026-07-19 05:29:05 | INFO | BI | cwd=.
+2026-07-19 05:29:05 | INFO | BI | github_actions=False
+2026-07-19 05:29:05 | INFO | BI | ========================
+2026-07-19 05:29:05 | INFO | BI | START main()
+2026-07-19 05:29:05 | INFO | BI | ========================
+2026-07-19 05:29:05 | INFO | BI | Task 1. LOAD. Call a function to load the dataset......
+2026-07-19 05:29:05 | INFO | BI | Loading products from data\raw\products_data.csv
+2026-07-19 05:29:05 | INFO | BI | Loaded: 100 rows, 6 columns
+2026-07-19 05:29:05 | INFO | BI | Task 2. INSPECT. Call a function to inspect the dataset...
+2026-07-19 05:29:05 | INFO | BI | Inspecting products
+2026-07-19 05:29:05 | INFO | BI |   Columns: ['ProductID', 'ProductName', 'Category', 'UnitPrice', 'StockQuantityUnits', 'StoreSection']
+2026-07-19 05:29:05 | INFO | BI |   Shape:   100 rows x 6 columns
+2026-07-19 05:29:05 | DEBUG | BI | 
+   ProductID           ProductName     Category  UnitPrice  StockQuantityUnits StoreSection
+0       2000    Electronics-Signal  Electronics     969.31                39.0    Warehouse
+1       2001     Electronics-Boost  Electronics     412.35               712.0   Back-Store
+2       2002         Office-Family       Office     866.00               473.0    Warehouse
+3       2003  Electronics-Training  Electronics     385.18                 NaN  Front-Store
+4       2004          Office-Where       Office     927.25               464.0       Endcap
+
+2026-07-19 05:29:05 | INFO | BI | Task 3. CHECK QUALITY BEFORE........
+2026-07-19 05:29:05 | INFO | BI | Quality check: products
+2026-07-19 05:29:05 | INFO | BI |   Total missing values: 2
+2026-07-19 05:29:05 | WARNING | BI |   Missing by column:
+StockQuantityUnits    1
+StoreSection          1
+dtype: int64
+2026-07-19 05:29:05 | INFO | BI |   Duplicate rows: 0
+2026-07-19 05:29:05 | INFO | BI | Task 4. SUMMARIZE BEFORE..........
+2026-07-19 05:29:05 | INFO | BI | Numeric summary: products
+2026-07-19 05:29:05 | INFO | BI | 
+       ProductID  UnitPrice  StockQuantityUnits
+count     100.00     100.00               99.00
+mean     2049.50     507.77             1379.91
+std        29.01     290.80            10015.69
+min      2000.00      13.51                6.00
+25%      2024.75     255.53              143.50
+50%      2049.50     496.39              381.00
+75%      2074.25     771.28              592.50
+max      2099.00     976.44            99999.00
+2026-07-19 05:29:05 | INFO | BI | Task 5. PREPARE DATASET.........
+2026-07-19 05:29:05 | INFO | BI | Preparing products data
+2026-07-19 05:29:05 | INFO | BI | Products Prep 1. Convert UnitPrice to numeric
+2026-07-19 05:29:05 | INFO | BI |   Non-numeric prices replaced with NaN: 0
+2026-07-19 05:29:05 | INFO | BI | Products Prep 2. Clean StockQuantityUnits (numeric)
+2026-07-19 05:29:05 | WARNING | BI |   2 row(s) with missing, negative, or unrealistic (> 2000) StockQuantityUnits - will be removed
+2026-07-19 05:29:05 | INFO | BI | Products Prep 3. Clean StoreSection (category)
+2026-07-19 05:29:05 | WARNING | BI |   1 row(s) with missing StoreSection - will be removed
+2026-07-19 05:29:05 | INFO | BI | Products Prep 4. Remove duplicate rows
+2026-07-19 05:29:05 | INFO | BI |   Rows before: 97
+2026-07-19 05:29:05 | INFO | BI |   Rows after: 97
+2026-07-19 05:29:05 | INFO | BI |   Removed 0 duplicate row(s)
+2026-07-19 05:29:05 | INFO | BI |   Products prepared: 97 rows
+2026-07-19 05:29:05 | INFO | BI | Task 6. CHECK QUALITY AFTER PREPARATION........
+2026-07-19 05:29:05 | INFO | BI | Quality check: products prepared
+2026-07-19 05:29:05 | INFO | BI |   Total missing values: 0
+2026-07-19 05:29:05 | INFO | BI |   Duplicate rows: 0
+2026-07-19 05:29:05 | INFO | BI | Task 7. SUMMARIZE AFTER PREPARATION........
+2026-07-19 05:29:05 | INFO | BI | Numeric summary: products prepared
+2026-07-19 05:29:05 | INFO | BI | 
+       ProductID  UnitPrice  StockQuantityUnits
+count      97.00      97.00               97.00
+mean     2050.33     510.62              376.30
+std        28.85     292.70              244.55
+min      2000.00      13.51                6.00
+25%      2026.00     258.61              150.00
+50%      2051.00     499.43              381.00
+75%      2075.00     780.64              592.00
+max      2099.00     976.44              797.00
+2026-07-19 05:29:05 | INFO | BI | Task 8. SAVE PREPARED DATASET........
+2026-07-19 05:29:05 | INFO | BI | Saved products
+2026-07-19 05:29:05 | INFO | BI |   Rows: 97
+2026-07-19 05:29:05 | INFO | BI |   Path: data\prepared\products_data_prepared.csv
+2026-07-19 05:29:05 | INFO | BI | Workflow complete
+2026-07-19 05:29:05 | INFO | BI | ========================
+2026-07-19 05:29:05 | INFO | BI | Executed successfully!
+2026-07-19 05:29:05 | INFO | BI | ========================
+2026-07-19 05:29:15 | INFO | BI | === RUN START ===
+2026-07-19 05:29:15 | INFO | BI | project=BI
+2026-07-19 05:29:15 | INFO | BI | repo_dir=bintel-03-cleaning
+2026-07-19 05:29:15 | INFO | BI | python=3.14.2
+2026-07-19 05:29:15 | INFO | BI | os=Windows 11
+2026-07-19 05:29:15 | INFO | BI | shell=powershell
+2026-07-19 05:29:15 | INFO | BI | cwd=.
+2026-07-19 05:29:15 | INFO | BI | github_actions=False
+2026-07-19 05:29:15 | INFO | BI | ========================
+2026-07-19 05:29:15 | INFO | BI | START main()
+2026-07-19 05:29:15 | INFO | BI | ========================
+2026-07-19 05:29:15 | INFO | BI | Task 1. LOAD. Call a function to load each dataset......
+2026-07-19 05:29:15 | INFO | BI | Loading sales from data\raw\sales_data.csv
+2026-07-19 05:29:15 | INFO | BI | Loaded: 2400 rows, 9 columns
+2026-07-19 05:29:15 | INFO | BI | Loading customers from data\raw\customers_data.csv
+2026-07-19 05:29:15 | INFO | BI | Loaded: 201 rows, 6 columns
+2026-07-19 05:29:15 | INFO | BI | Loading products from data\raw\products_data.csv
+2026-07-19 05:29:15 | INFO | BI | Loaded: 100 rows, 6 columns
+2026-07-19 05:29:15 | INFO | BI | Task 2. INSPECT. Call a function to inspect the sales dataset...
+2026-07-19 05:29:15 | INFO | BI | Inspecting sales
+2026-07-19 05:29:15 | INFO | BI |   Columns: ['TransactionID', 'SaleDate', 'CustomerID', 'ProductID', 'StoreID', 'CampaignID', 'SaleAmount', 'DiscountPercent', 'PaymentType']
+2026-07-19 05:29:15 | INFO | BI |   Shape:   2400 rows x 9 columns
+2026-07-19 05:29:15 | DEBUG | BI | 
+   TransactionID    SaleDate  CustomerID  ProductID  StoreID  CampaignID SaleAmount  DiscountPercent PaymentType
+0              1  2025-01-09        1020       2023      401         0.0     643.02             12.3    GiftCard
+1              2  2024-07-10        1034       2091      404         2.0     529.24             21.0  CreditCard
+2              3  2025-03-22        1087       2035      403         3.0    4313.72              5.3   DebitCard
+3              4  2024-12-27        1186       2015      404         NaN    1275.85              8.7   DebitCard
+4              5  2025-04-21        1049       2005      402         0.0    1739.64              3.5  CreditCard
+
+2026-07-19 05:29:15 | INFO | BI | Task 3. CHECK QUALITY BEFORE........
+2026-07-19 05:29:15 | INFO | BI | Quality check: sales
+2026-07-19 05:29:15 | INFO | BI |   Total missing values: 195
+2026-07-19 05:29:15 | WARNING | BI |   Missing by column:
+CampaignID         193
+DiscountPercent      1
+PaymentType          1
+dtype: int64
+2026-07-19 05:29:15 | INFO | BI |   Duplicate rows: 0
+2026-07-19 05:29:15 | INFO | BI | Task 4. SUMMARIZE BEFORE..........
+2026-07-19 05:29:15 | INFO | BI | Numeric summary: sales
+2026-07-19 05:29:15 | INFO | BI | 
+       TransactionID  CustomerID  ProductID  StoreID  CampaignID  DiscountPercent
+count        2400.00     2400.00    2400.00  2400.00     2207.00          2399.00
+mean         1200.50     1086.75    2049.07   402.53        1.46            15.11
+std           692.96       57.32      28.67     1.13        1.12             8.79
+min             1.00     1000.00    2000.00   401.00        0.00             0.00
+25%           600.75     1034.00    2023.00   402.00        0.00             7.45
+50%          1200.50     1079.00    2046.00   403.00        1.00            15.50
+75%          1800.25     1132.00    2074.00   404.00        2.00            22.50
+max          2400.00     1199.00    2099.00   404.00        3.00            55.00
+2026-07-19 05:29:15 | INFO | BI | Task 5. PREPARE DATASET.........
+2026-07-19 05:29:15 | INFO | BI | Preparing sales data
+2026-07-19 05:29:15 | INFO | BI | Sales Prep 1. Convert SaleDate to datetime
+2026-07-19 05:29:15 | INFO | BI | Sales Prep 2. Convert SaleAmount to numeric
+2026-07-19 05:29:15 | WARNING | BI |   8 row(s) with invalid SaleAmount - will be removed
+2026-07-19 05:29:15 | INFO | BI | Sales Prep 3. Remove rows with missing date or amount
+2026-07-19 05:29:15 | INFO | BI |   Rows before: 2400
+2026-07-19 05:29:15 | INFO | BI |   Rows after: 2392
+2026-07-19 05:29:15 | INFO | BI |   Removed 8 row(s) with missing date or amount
+2026-07-19 05:29:15 | INFO | BI | Sales Prep 4. Check CustomerID foreign key integrity
+2026-07-19 05:29:15 | INFO | BI | Sales Prep 5. Check ProductID foreign key integrity
+2026-07-19 05:29:15 | INFO | BI | Sales Prep 6. Clean DiscountPercent (numeric)
+2026-07-19 05:29:15 | WARNING | BI |   2 row(s) with missing or unrealistic (outside 0.0-50.0%) DiscountPercent - will be removed
+2026-07-19 05:29:15 | INFO | BI | Sales Prep 7. Clean PaymentType (category)
+2026-07-19 05:29:15 | WARNING | BI |   1 row(s) with missing or unrecognized PaymentType - will be removed
+2026-07-19 05:29:15 | INFO | BI | Sales Prep 8. Remove duplicate rows
+2026-07-19 05:29:15 | INFO | BI |   Rows before: 2389
+2026-07-19 05:29:15 | INFO | BI |   Rows after: 2389
+2026-07-19 05:29:15 | INFO | BI |   Removed 0 duplicate row(s)
+2026-07-19 05:29:15 | INFO | BI |   Sales prepared: 2389 rows
+2026-07-19 05:29:15 | INFO | BI | Task 6. CHECK QUALITY AFTER PREPARATION........
+2026-07-19 05:29:15 | INFO | BI | Quality check: sales prepared
+2026-07-19 05:29:15 | INFO | BI |   Total missing values: 193
+2026-07-19 05:29:15 | WARNING | BI |   Missing by column:
+CampaignID    193
+dtype: int64
+2026-07-19 05:29:15 | INFO | BI |   Duplicate rows: 0
+2026-07-19 05:29:15 | INFO | BI | Task 7. SUMMARIZE AFTER PREPARATION........
+2026-07-19 05:29:15 | INFO | BI | Numeric summary: sales prepared
+2026-07-19 05:29:15 | INFO | BI | 
+       TransactionID  CustomerID  ProductID  StoreID  CampaignID  SaleAmount  DiscountPercent
+count        2389.00     2389.00    2389.00  2389.00     2196.00     2389.00          2389.00
+mean         1200.48     1086.63    2049.08   402.53        1.46     1536.06            15.07
+std           691.65       57.33      28.69     1.12        1.12     1271.30             8.76
+min             1.00     1000.00    2000.00   401.00        0.00        0.00             0.00
+25%           603.00     1034.00    2023.00   402.00        0.00      593.23             7.40
+50%          1200.00     1079.00    2046.00   403.00        1.00     1240.62            15.50
+75%          1799.00     1132.00    2074.00   404.00        2.00     1922.68            22.50
+max          2400.00     1199.00    2099.00   404.00        3.00     4993.88            30.00
+2026-07-19 05:29:15 | INFO | BI | Task 8. SAVE PREPARED DATASET........
+2026-07-19 05:29:15 | INFO | BI | Saved sales
+2026-07-19 05:29:15 | INFO | BI |   Rows: 2389
+2026-07-19 05:29:15 | INFO | BI |   Path: data\prepared\sales_data_prepared.csv
+2026-07-19 05:29:15 | INFO | BI | Workflow complete
+2026-07-19 05:29:15 | INFO | BI | ========================
+2026-07-19 05:29:15 | INFO | BI | Executed successfully!
+2026-07-19 05:29:15 | INFO | BI | ========================
